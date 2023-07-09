@@ -1,0 +1,861 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 26 14:44:21 2023
+# Process ID: 8356
+# Current directory: E:/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3448 E:\project_1\project_1.xpr
+# Log file: E:/project_1/vivado.log
+# Journal file: E:/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/MyPrograms/Vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 750.223 ; gain = 107.598
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/MyPrograms/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Simulate' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project_1/project_1.sim/sim_1/behav/xsim/fir_compiler_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project_1/project_1.sim/sim_1/behav/xsim/500k_lowpass.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Simulate_vlog.prj"
+"xvhdl --incr --relax -prj Simulate_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0cb801849869415e885de2254d96ca45 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Simulate_behav xil_defaultlib.Simulate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/MyPrograms/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cb801849869415e885de2254d96ca45 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Simulate_behav xil_defaultlib.Simulate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:57 . Memory (MB): peak = 785.559 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '57' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Simulate_behav -key {Behavioral:sim_1:Functional:Simulate} -tclbatch {Simulate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Simulate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/project_1/SinIn.txt
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 812.387 ; gain = 22.547
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Simulate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:01:09 . Memory (MB): peak = 812.387 ; gain = 45.320
+run 10 us
+$finish called at time : 1252 ns : File "E:/project_1/project_1.srcs/sim_1/new/Simulate.v" Line 29
+run 10 us
+create_ip -name fir_compiler -vendor xilinx.com -library ip -version 7.2 -module_name fir_compiler_1 -dir e:/project_1/project_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {E:/project_1/500k_lowpass.coe} CONFIG.Sample_Frequency {50} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Sign {Signed} CONFIG.Coefficient_Width {12} CONFIG.Data_Width {12} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Fractional_Bits {0} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {25} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {8}] [get_ips fir_compiler_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/project_1/500k_lowpass.coe' provided. It will be converted relative to IP Instance files '../../../../500k_lowpass.coe'
+generate_target {instantiation_template} [get_files e:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_1'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_1'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_1: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_1'...
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs -jobs 4 fir_compiler_1_synth_1
+[Mon Jun 26 16:46:41 2023] Launched fir_compiler_1_synth_1...
+Run output will be captured here: E:/project_1/project_1.runs/fir_compiler_1_synth_1/runme.log
+export_simulation -of_objects [get_files e:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir E:/project_1/project_1.ip_user_files -ipstatic_source_dir E:/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project_1/project_1.cache/compile_simlib/modelsim} {questa=E:/project_1/project_1.cache/compile_simlib/questa} {riviera=E:/project_1/project_1.cache/compile_simlib/riviera} {activehdl=E:/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open E:/project_1/project_1.srcs/sources_1/new/FIR_IO1.v w ]
+add_files E:/project_1/project_1.srcs/sources_1/new/FIR_IO1.v
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 900.414 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/MyPrograms/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Simulate' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project_1/project_1.sim/sim_1/behav/xsim/fir_compiler_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project_1/project_1.sim/sim_1/behav/xsim/500k_lowpass.coe'
+INFO: [SIM-utils-43] Exported 'E:/project_1/project_1.sim/sim_1/behav/xsim/fir_compiler_1.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Simulate_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_1/project_1.srcs/sources_1/new/FIR_IO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_IO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_1/project_1.srcs/sources_1/new/FIR_IO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_IO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_1/project_1.srcs/sim_1/new/Simulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Simulate
+"xvhdl --incr --relax -prj Simulate_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/sim/fir_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_compiler_1'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 900.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0cb801849869415e885de2254d96ca45 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Simulate_behav xil_defaultlib.Simulate xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/MyPrograms/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cb801849869415e885de2254d96ca45 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Simulate_behav xil_defaultlib.Simulate xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package fir_compiler_v7_2_12.fir_compiler_v7_2_12_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_12.globals_pkg
+Compiling package fir_compiler_v7_2_12.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=12,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_slave [\glb_ifx_slave(width=12,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.filt_mem [\filt_mem(c_xdevicefamily="artix...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.filt_mem [\filt_mem(c_xdevicefamily="artix...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.filt_mem [\filt_mem(c_xdevicefamily="artix...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.sp_mem [\sp_mem(c_xdevicefamily="artix7"...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.filt_mem [\filt_mem(c_xdevicefamily="artix...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.buff [\buff(c_xdevicefamily="artix7",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=5,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=4,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.buff [\buff(c_xdevicefamily="artix7",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.calc [\calc(c_xdevicefamily="artix7",c...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Compiling architecture synth of entity fir_compiler_v7_2_12.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.delay [\delay(c_delay_len=12,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.single_rate [\single_rate(c_xdevicefamily="ar...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.fir_compiler_v7_2_12_viv [\fir_compiler_v7_2_12_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_12.fir_compiler_v7_2_12 [\fir_compiler_v7_2_12(c_xdevicef...]
+Compiling architecture fir_compiler_0_arch of entity xil_defaultlib.fir_compiler_0 [fir_compiler_0_default]
+Compiling module xil_defaultlib.FIR_IO
+Compiling architecture synth of entity fir_compiler_v7_2_12.single_rate [\single_rate(c_xdevicefamily="ar...]
+Compiling architecture synth of entity fir_compiler_v7_2_12.fir_compiler_v7_2_12_viv [\fir_compiler_v7_2_12_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_12.fir_compiler_v7_2_12 [\fir_compiler_v7_2_12(c_xdevicef...]
+Compiling architecture fir_compiler_1_arch of entity xil_defaultlib.fir_compiler_1 [fir_compiler_1_default]
+Compiling module xil_defaultlib.FIR_IO1
+Compiling module xil_defaultlib.Simulate
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Simulate_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/Simulate_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/Simulate_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jun 26 17:05:20 2023. For additional details about this file, please refer to the WebTalk help file at D:/MyPrograms/Vivado/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 26 17:05:20 2023...
+run_program: Time (s): cpu = 00:00:18 ; elapsed = 00:06:37 . Memory (MB): peak = 900.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '397' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Simulate_behav -key {Behavioral:sim_1:Functional:Simulate} -tclbatch {Simulate.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Simulate.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/project_1/SinIn.txt
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 3
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 5
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 8
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 10
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 13
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 15
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 18
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 20
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 23
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 28
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 33
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 39
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 44
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 49
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 54
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 59
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 64
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 69
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 74
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 79
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 84
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 89
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 94
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 99
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 104
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 118
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 123
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 128
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 133
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 135
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 138
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 140
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 143
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 145
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 148
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 150
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 153
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 155
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 158
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 160
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 163
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 165
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 168
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 170
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 171
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 173
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 175
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 176
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 178
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 180
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 181
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 183
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 185
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 186
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 188
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 190
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 191
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 193
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 195
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 196
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 198
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 200
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 203
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 205
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 208
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 210
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 213
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 215
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 218
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 220
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 223
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 225
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 228
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 230
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 233
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 238
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 243
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 248
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 254
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 259
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 264
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 269
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 272
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 274
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 277
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 279
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 282
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 284
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 287
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 289
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 292
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 294
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 297
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 299
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 302
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 304
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 307
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 309
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 312
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 314
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 317
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 319
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 322
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 324
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 327
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 329
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 332
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 334
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 337
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 339
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 342
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 344
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 347
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 349
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 354
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 359
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 364
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 368
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 373
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 378
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 383
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 385
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 388
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 390
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 393
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 395
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 398
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 400
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 403
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 405
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 406
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 408
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 410
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 411
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 413
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 415
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 416
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 418
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 420
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 421
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 423
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 425
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 426
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 428
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 430
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 431
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 433
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 435
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 436
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 437
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 438
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 440
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 441
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 442
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 443
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 445
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 446
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 447
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 448
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 450
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 451
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 452
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 453
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 455
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 456
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 457
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 458
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 460
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 461
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 463
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 465
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 466
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 468
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 470
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 471
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 473
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 475
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 476
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 478
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 480
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 481
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 483
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 485
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 486
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 488
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 490
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 491
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 493
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 495
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 496
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 498
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 500
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 503
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 505
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 508
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 510
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 513
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 515
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 518
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 520
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 523
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 525
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 528
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 530
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 533
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 535
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 538
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 543
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 548
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 553
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 558
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 563
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 568
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 570
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 573
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 575
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 578
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 580
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 583
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 585
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 588
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 590
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 593
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 595
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 598
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 600
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 603
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 605
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 606
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 608
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 610
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 611
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 613
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 615
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 616
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 618
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 620
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 621
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 622
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 623
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 625
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 626
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 627
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 628
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 630
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 631
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 632
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 633
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 635
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 636
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 637
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 638
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 639
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 640
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 641
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 642
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 643
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 644
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 645
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 646
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 647
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 648
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 649
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 650
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 651
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 652
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 653
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 654
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 655
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 656
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 657
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 658
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 659
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 660
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 661
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 662
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 663
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 664
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 665
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 666
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 667
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 668
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 669
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 670
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 671
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 672
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 673
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 674
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 675
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 676
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 677
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 678
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 679
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 680
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 681
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 682
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 683
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 684
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 685
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 686
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 687
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 688
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 689
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 690
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 691
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 692
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 693
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 694
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 695
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 696
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 697
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 698
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 699
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 700
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 701
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 702
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 703
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 704
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 705
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 706
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 707
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 708
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 709
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 710
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 711
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 712
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 713
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 714
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 715
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 716
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 717
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 718
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 719
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 720
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 721
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 722
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 723
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 724
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 725
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 726
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 727
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 728
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 729
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 730
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 731
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 732
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 733
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 734
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 735
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 736
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 737
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 738
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 739
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 740
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 741
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 742
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 743
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 744
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 745
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 746
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 747
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 748
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 749
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 750
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 751
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 752
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 753
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 755
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 756
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 757
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 758
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 760
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 761
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 762
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 763
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 765
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 766
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 767
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 768
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 770
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 771
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 773
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 775
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 776
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 778
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 780
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 781
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 783
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 785
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 786
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 788
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 790
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 791
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 793
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 795
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 796
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 798
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 800
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 803
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 805
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 808
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 810
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 813
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 815
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 818
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 820
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 823
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 825
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 828
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 830
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 833
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 835
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 836
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 838
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 840
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 841
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 843
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 845
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 846
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 848
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 850
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 851
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 853
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 855
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 856
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 858
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 860
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 861
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 863
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 865
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 866
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 868
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 870
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 871
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 872
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 873
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 875
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 876
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 877
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 878
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 880
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 881
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 882
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 883
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 885
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 886
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 887
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 888
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 889
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 890
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 891
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 892
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 893
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 894
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 895
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 896
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 897
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 898
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 899
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 900
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 901
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 902
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 903
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 904
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 905
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 906
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 907
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 908
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 909
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 910
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 911
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 912
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 913
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 914
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 915
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 916
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 917
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 918
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 919
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 920
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 921
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 922
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 923
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 924
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 925
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 926
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 927
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 928
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 929
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 930
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 931
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 932
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 933
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 934
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 935
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 936
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 937
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 938
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 939
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 940
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 941
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 942
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 943
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 944
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 945
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 946
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 947
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 948
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 949
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 950
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 951
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 952
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 953
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 954
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 955
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 956
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 957
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 958
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 959
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 960
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 961
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 962
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 963
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 964
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 965
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 966
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 967
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 968
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 970
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 971
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 972
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 973
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 975
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 976
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 977
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 978
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 980
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 981
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 983
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 985
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 986
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 988
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 990
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 991
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 993
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 995
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 996
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 998
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1000
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1003
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1005
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1008
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1010
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1013
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1015
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1018
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1020
+WARNING: Data truncated while reading Datafile: E:/project_1/sin_data.txt, while loading at index: 1023
+ERROR: Illegal binary digit ';' found in data of file "E:/project_1/sin_data.txt"
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 900.414 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Simulate_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:26 ; elapsed = 00:06:52 . Memory (MB): peak = 900.414 ; gain = 0.000
+save_wave_config {E:/project_1/Simulate_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/project_1/Simulate_behav.wcfg
+set_property xsim.view E:/project_1/Simulate_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 19:08:45 2023...

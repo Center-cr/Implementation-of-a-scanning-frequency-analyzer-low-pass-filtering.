@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/project_1/project_1.srcs/sim_1/new/Simulate.v,1687787583,verilog,,,,Simulate,,,,,,,,
+E:/project_1/project_1.srcs/sources_1/ip/fir_compiler_0/sim/fir_compiler_0.vhd,1687427820,vhdl,,,,fir_compiler_0,,,,,,,,
+E:/project_1/project_1.srcs/sources_1/ip/fir_compiler_1/sim/fir_compiler_1.vhd,1687788382,vhdl,,,,fir_compiler_1,,,,,,,,
+E:/project_1/project_1.srcs/sources_1/new/FIR_IO.v,1687427591,verilog,,E:/project_1/project_1.srcs/sources_1/new/FIR_IO1.v,,FIR_IO,,,,,,,,
+E:/project_1/project_1.srcs/sources_1/new/FIR_IO1.v,1687778530,verilog,,E:/project_1/project_1.srcs/sim_1/new/Simulate.v,,FIR_IO1,,,,,,,,

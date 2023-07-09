@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Simulate_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Simulate" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="243451334fs"></ZoomStartTime>
+      <ZoomEndTime time="352751335fs"></ZoomEndTime>
+      <Cursor1Time time="282952000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="226"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/Simulate/Xin" type="array">
+      <obj_property name="ElementShortName">Xin[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Xin[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/Xin1" type="array">
+      <obj_property name="ElementShortName">Xin1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Xin1[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/m_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/Yout" type="array">
+      <obj_property name="ElementShortName">Yout[24:0]</obj_property>
+      <obj_property name="ObjectShortName">Yout[24:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/Yout1" type="array">
+      <obj_property name="ElementShortName">Yout1[24:0]</obj_property>
+      <obj_property name="ObjectShortName">Yout1[24:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/Pattern" type="array">
+      <obj_property name="ElementShortName">Pattern[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Pattern[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/stimulus" type="array">
+      <obj_property name="ElementShortName">stimulus[1:2000][11:0]</obj_property>
+      <obj_property name="ObjectShortName">stimulus[1:2000][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/data_men" type="array">
+      <obj_property name="ElementShortName">data_men[1:2000][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_men[1:2000][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/clk_period" type="array">
+      <obj_property name="ElementShortName">clk_period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_period[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/clk_half_period" type="array">
+      <obj_property name="ElementShortName">clk_half_period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_half_period[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/data_num" type="array">
+      <obj_property name="ElementShortName">data_num[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_num[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Simulate/time_sim" type="array">
+      <obj_property name="ElementShortName">time_sim[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_sim[31:0]</obj_property>
+   </wvobject>
+</wave_config>
